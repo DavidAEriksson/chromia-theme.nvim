@@ -1,47 +1,47 @@
 local C = require "chromia.colors"
 
-local nordic = {}
+local chromia = {}
 
-nordic.normal = {
+chromia.normal = {
     a = { bg = C.orange, fg = C.black0, gui = "bold" },
     b = { bg = C.gray1, fg = C.white1 },
     c = { bg = C.bg_statusline, fg = C.white0 },
 }
 
-nordic.insert = {
+chromia.insert = {
     a = { bg = C.green, fg = C.black0, gui = "bold" },
     b = { bg = C.gray1, fg = C.white1 },
     c = { bg = C.bg_statusline, fg = C.white0 },
 }
 
-nordic.command = {
+chromia.command = {
     a = { bg = C.cyan.bright, fg = C.black0, gui = "bold" },
     b = { bg = C.gray1, fg = C.white1 },
     c = { bg = C.bg_statusline, fg = C.white0 },
 }
 
-nordic.visual = {
+chromia.visual = {
     a = { bg = C.red.bright, fg = C.black0, gui = "bold" },
     b = { bg = C.gray1, fg = C.white1 },
     c = { bg = C.bg_statusline, fg = C.white0 },
 }
 
-nordic.replace = {
+chromia.replace = {
     a = { bg = C.magenta.bright, fg = C.black0, gui = "bold" },
     b = { bg = C.gray1, fg = C.white1 },
     c = { bg = C.bg_statusline, fg = C.white0 },
 }
 
-nordic.terminal = {
+chromia.terminal = {
     a = { bg = C.blue2, fg = C.black0, gui = "bold" },
     b = { bg = C.gray1, fg = C.white1 },
     c = { bg = C.bg_statusline, fg = C.white0 },
 }
 
-nordic.inactive = {
+chromia.inactive = {
     a = { bg = C.gray2, fg = C.black0, gui = "bold" },
     b = { bg = C.gray1, fg = C.white1 },
     c = { bg = C.bg_statusline, fg = C.white0 },
 }
 
-return nordic
+return chromia
