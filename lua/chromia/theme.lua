@@ -440,7 +440,6 @@ M.plugins = {
     NvimTreeEmptyFolderName = { fg = colors.yellow, style = "italic" },
     NvimTreeCursorLine = { fg = colors.line_fg, bg = colors.black1 },
     NvimTreeExecFile = { fg = colors.green },
-    NvimTreeFolderIcon = { fg = colors.comment },
     NvimTreeFolderName = { fg = colors.white1 },
     NvimTreeGitDeleted = { fg = colors.red_err },
     NvimTreeGitDirty = { fg = colors.diff_add },
