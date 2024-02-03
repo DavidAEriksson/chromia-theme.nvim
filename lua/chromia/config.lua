@@ -1,25 +1,27 @@
-local config
+local config = {}
 
-vim = vim or { g = {}, o = {} }
+local defaults = {
+    custom_colors = {},
+    function_style = {
+        bold = true,
+        italic = true,
+    },
+    keyword_style = {
+        bold = true,
+        italic = true,
+    },
+    string_style = {
+        bold = false,
+        italic = true,
+    },
+}
 
-local function opt(key, default)
-    key = "chromia_" .. key
-    if vim.g[key] == nil then
-        return default
-    end
-    if vim.g[key] == 0 then
-        return false
-    end
-    return vim.g[key]
+config.options = {}
+
+function config.set_options(opts)
+    config.options = vim.tbl_deep_extend("force", config.options, opts or {})
 end
 
-config = {
-    transparent_background = opt("transparent_background", false),
-    italic_comments = opt("italic_keywords", true) and "italic" or "NONE",
-    italic_keywords = opt("italic_keywords", true) and "italic" or "NONE",
-    italic_booleans = opt("italic_booleans", false) and "italic" or "NONE",
-    italic_functions = opt("italic_function", false) and "italic" or "NONE",
-    italic_variables = opt("italic_variables", true) and "italic" or "NONE",
-}
+config.set_options(defaults)
 
 return config

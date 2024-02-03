@@ -1,7 +1,16 @@
-local util = require "chromia.util"
-local theme = require "chromia.theme"
+local utils = require "chromia.utils"
+local config = require "chromia.config"
 
-vim.o.background = "dark"
-vim.g.colors_name = "chromia"
+local M = {}
 
-util.load(theme)
+function M.setup(options)
+    config.set_options(options)
+    M.load()
+end
+
+function M.load()
+    local colors = require("chromia.colors").load()
+    utils.load(colors)
+end
+
+return M
