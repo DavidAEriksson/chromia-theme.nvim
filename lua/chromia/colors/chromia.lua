@@ -48,9 +48,9 @@ local colors = {
         seven = "#393939",
     },
     orange = {
-        two = "#EB4521",
-        three = "#FF702B",
-        four = "#FF9100",
+        one = "#EB4521",
+        two = "#FF702B",
+        three = "#FF9100",
     },
 }
 
