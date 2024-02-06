@@ -7,6 +7,7 @@ package.loaded["chromia.config"] = nil
 package.loaded["chromia.init"] = nil
 package.loaded["chromia.theme"] = nil
 package.loaded["chromia.utils"] = nil
+package.loaded["chromia.lualine.themes.chromia"] = nil
 vim.api.nvim_set_keymap("n", ",r", ":luafile colors/chromia.lua<CR>", {})
 vim.api.nvim_set_keymap("n", ",s", ":colorscheme nordic<CR>", {})
 local chromia = require "chromia"
