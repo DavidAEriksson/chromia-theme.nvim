@@ -14,6 +14,18 @@ local defaults = {
         bold = false,
         italic = true,
     },
+    comment_style = {
+        bold = false,
+        italic = true,
+    },
+    boolean_style = {
+        bold = true,
+        italic = true,
+    },
+    operator_style = {
+        bold = true,
+        italic = true,
+    },
 }
 
 config.options = {}
